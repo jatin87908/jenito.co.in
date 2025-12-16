@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jenito - Login</title>
+  <link rel="stylesheet" href="food.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div id="stars-canvas"></div>
+
+ <div class="login-box">
+  <h2>Login to Jenito</h2>
+
+  <form onsubmit="return handleLogin()">
+    <input type="text" id="email" placeholder="Email or Username" required>
+    <input type="password" id="password" placeholder="Password" required>
+
+    <button type="submit" id="loginBtn">Login</button>
+  </form>
+
+  <p><a href="food.html">⬅ Back to Home</a></p>
+</div>
+
+<script>
+  function handleLogin() {
+    let email = document.getElementById("email").value;
+    let pass = document.getElementById("password").value;
+
+    if (email && pass) {
+      document.getElementById("loginBtn").innerText = "Order Now";
+      window.location.href = "order.html";
+    }
+    return false; // page reload stop
+  }
+</script>
+  </script>
+
+  <script src="food.js"></script>
+</body>
+</html>
