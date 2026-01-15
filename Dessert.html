@@ -6,6 +6,17 @@
   <title>Dessert Varieties - Jenito</title>
   <link rel="stylesheet" href="food.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Card ko clickable banane aur link ka default style hatane ke liye */
+    .food-card {
+      cursor: pointer;
+    }
+    .food-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block; /* Pura card area clickable banane ke liye */
+    }
+  </style>
 </head>
 <body>
   <div id="stars-canvas"></div>
@@ -15,9 +26,9 @@
     <div class="Logo">JENITO</div>
     <nav>
       <ul>
-        <li><a href="food.html#popular">Popular Dishes</a></li>
-        <li><a href="food.html#plans">Meal Plans</a></li>
-        <li><a href="#">Order Now</a></li>
+        <li><a href="index.html#popular">Popular Dishes</a></li>
+        <li><a href="index.html#plans">Meal Plans</a></li>
+        <li><a href="order.html">Order Now</a></li>
         <li><a href="login.html">Login</a></li>
       </ul>
     </nav>
@@ -26,88 +37,110 @@
   <div class="food-container">
     <h1>🍰 Dessert Varieties</h1>
     <div class="food-grid">
+      
       <div class="food-card">
-        <img src="Chocolate.jpg" alt="Chocolate Cake">
-        <div class="food-info">
-          <h3>Chocolate Cake</h3>
-          <p>₹280</p>
-        </div>
+        <a href="order.html">
+          <img src="Chocolate.jpg" alt="Chocolate Cake">
+          <div class="food-info">
+            <h3>Chocolate Cake</h3>
+            <p>₹280</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="Cheese.jpg" alt="Cheesecake">
-        <div class="food-info">
-          <h3>Cheesecake</h3>
-          <p>₹320</p>
-        </div>
+        <a href="order.html">
+          <img src="Cheese.jpg" alt="Cheesecake">
+          <div class="food-info">
+            <h3>Cheesecake</h3>
+            <p>₹320</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="Tiramisu.jpg" alt="Tiramisu">
-        <div class="food-info">
-          <h3>Tiramisu</h3>
-          <p>₹250</p>
-        </div>
+        <a href="order.html">
+          <img src="Tiramisu.jpg" alt="Tiramisu">
+          <div class="food-info">
+            <h3>Tiramisu</h3>
+            <p>₹250</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="Ice Cream.jpg" alt="Ice Cream">
-        <div class="food-info">
-          <h3>Ice Cream</h3>
-          <p>₹180</p>
-        </div>
+        <a href="order.html">
+          <img src="Ice Cream.jpg" alt="Ice Cream">
+          <div class="food-info">
+            <h3>Ice Cream</h3>
+            <p>₹180</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="Brownie.jpg" alt="Brownie">
-        <div class="food-info">
-          <h3>Brownie</h3>
-          <p>₹150</p>
-        </div>
+        <a href="order.html">
+          <img src="Brownie.jpg" alt="Brownie">
+          <div class="food-info">
+            <h3>Brownie</h3>
+            <p>₹150</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="Fruit Tart.webp" alt="Fruit Tart">
-        <div class="food-info">
-          <h3>Fruit Tart</h3>
-          <p>₹220</p>
-        </div>
+        <a href="order.html">
+          <img src="Fruit Tart.webp" alt="Fruit Tart">
+          <div class="food-info">
+            <h3>Fruit Tart</h3>
+            <p>₹220</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="Creme Brulee.jpg" alt="Creme Brulee">
-        <div class="food-info">
-          <h3>Creme Brulee</h3>
-          <p>₹270</p>
-        </div>
+        <a href="order.html">
+          <img src="Creme Brulee.jpg" alt="Creme Brulee">
+          <div class="food-info">
+            <h3>Creme Brulee</h3>
+            <p>₹270</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="Gulab Jamun.jpg" alt="Gulab Jamun">
-        <div class="food-info">
-          <h3>Gulab Jamun</h3>
-          <p>₹120</p>
-        </div>
+        <a href="order.html">
+          <img src="Gulab Jamun.jpg" alt="Gulab Jamun">
+          <div class="food-info">
+            <h3>Gulab Jamun</h3>
+            <p>₹120</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="Rasmalai.jpg" alt="Rasmalai">
-        <div class="food-info">
-          <h3>Rasmalai</h3>
-          <p>₹140</p>
-        </div>
+        <a href="order.html">
+          <img src="Rasmalai.jpg" alt="Rasmalai">
+          <div class="food-info">
+            <h3>Rasmalai</h3>
+            <p>₹140</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="Chocolate Mousse.jpeg" alt="Chocolate Mousse">
-        <div class="food-info">
-          <h3>Chocolate Mousse</h3>
-          <p>₹200</p>
-        </div>
-      </div>
+        <a href="order.html">
+          <img src="Chocolate Mousse.jpeg" alt="Chocolate Mousse">
+          <div class="food-info">
+            <h3>Chocolate Mousse</h3>
+            <p>₹200</p>
+          </div>
+        </a>
       </div>
 
-       <a class="back-link" href="food.html">⬅ Back to Home</a>
+    </div>
+
+    <a class="back-link" href="index.html">⬅ Back to Home</a>
   </div>
 
   <script src="food.js"></script>
