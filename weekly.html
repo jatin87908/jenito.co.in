@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Plan - Jenito</title>
+  <link rel="stylesheet" href="food.css">
+  <style>
+    /* Grid Layout */
+    .days-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Glassmorphism Card Design */
+    .day-box {
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.05); 
+      border: 1px solid rgba(255, 77, 77, 0.3);
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    /* Hover Effect */
+    .day-box:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 77, 77, 0.1);
+      border-color: #ff4d4d;
+      box-shadow: 0 12px 40px 0 rgba(255, 77, 77, 0.2);
+    }
+
+    /* Day Title with Gradient (No Yellow) */
+    .day-title {
+      background: linear-gradient(45deg, #ff4d4d, #ff8080);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Meal Text Style */
+    .meal-details p {
+      font-size: 0.95rem;
+      color: #eeeeee;
+      margin: 8px 0;
+      line-height: 1.4;
+    }
+
+    .meal-details strong {
+      color: #ff4d4d; /* Heading like Breakfast/Lunch in Red */
+      font-weight: 600;
+    }
+
+    /* Back Link Button Style */
+    .back-btn-container {
+      text-align: center;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="stars-canvas"></div>
+  
+  <header style="text-align: center; padding: 20px;">
+    <img class="img" src="Logo.11.jpg" width="120" height="120" alt="Jenito Logo" style="border-radius: 50%;">
+    <div class="Logo" style="font-size: 2.5rem; color: #ff4d4d; font-weight: bold; margin-top: 10px;">JENITO</div>
+  </header>
+
+  <div class="food-container">
+    <h1 style="color: #ff4d4d; text-align: center; font-size: 2rem; margin-bottom: 30px;">📅 Weekly Plan Details</h1>
+    
+    <div class="food-card" style="width: 90%; max-width: 450px; margin: 0 auto 50px auto; background: rgba(255,255,255,0.05); padding: 30px; border-radius: 20px; border: 2px solid #ff4d4d; text-align: center;">
+      <div class="food-info">
+        <h3 style="color: white; font-size: 1.8rem;">7 Day Meal Plan</h3>
+        <p style="color: #ccc;">Healthy & Fresh Meals Daily</p>
+        <p style="font-size: 2rem; font-weight: bold; color: #ff4d4d; margin: 15px 0;">₹999 <span style="font-size: 1rem; color: #999;">/ week</span></p>
+        <a href="order.html" style="text-decoration: none; display: inline-block; background: #ff4d4d; color: white; padding: 12px 30px; border-radius: 50px; font-weight: bold; transition: 0.3s;">Subscribe Now</a>
+      </div>
+    </div>
+
+    <div class="days-grid">
+      <div class="day-box">
+        <div class="day-title">Day 1</div>
+        <div class="meal-details">
+          <p><strong>Breakfast:</strong> Poha & Tea</p>
+          <p><strong>Lunch:</strong> Dal Tadka, Rice & Sabzi</p>
+          <p><strong>Dinner:</strong> Paneer Masala & Roti</p>
+        </div>
+      </div>
+
+      <div class="day-box">
+        <div class="day-title">Day 2</div>
+        <div class="meal-details">
+          <p><strong>Breakfast:</strong> Stuffed Paratha</p>
+          <p><strong>Lunch:</strong> Rajma Chawal & Salad</p>
+          <p><strong>Dinner:</strong> Mix Veg & Roti</p>
+        </div>
+      </div>
+
+      <div class="day-box">
+        <div class="day-title">Day 3</div>
+        <div class="meal-details">
+          <p><strong>Breakfast:</strong> Idli Sambhar</p>
+          <p><strong>Lunch:</strong> Kadhi Pakora & Rice</p>
+          <p><strong>Dinner:</strong> Aloo Gobhi & Roti</p>
+        </div>
+      </div>
+
+      <div class="day-box">
+        <div class="day-title">Day 4</div>
+        <div class="meal-details">
+          <p><strong>Breakfast:</strong> Upma</p>
+          <p><strong>Lunch:</strong> Chole Bhature/Rice</p>
+          <p><strong>Dinner:</strong> Baingan Bharta & Roti</p>
+        </div>
+      </div>
+
+      <div class="day-box">
+        <div class="day-title">Day 5</div>
+        <div class="meal-details">
+          <p><strong>Breakfast:</strong> Bread Omelette/Toast</p>
+          <p><strong>Lunch:</strong> Veg Pulav & Raita</p>
+          <p><strong>Dinner:</strong> Bhindi Fry & Roti</p>
+        </div>
+      </div>
+
+      <div class="day-box">
+        <div class="day-title">Day 6</div>
+        <div class="meal-details">
+          <p><strong>Breakfast:</strong> Puri Sabzi</p>
+          <p><strong>Lunch:</strong> Black Dal & Jeera Rice</p>
+          <p><strong>Dinner:</strong> Matar Paneer & Roti</p>
+        </div>
+      </div>
+
+      <div class="day-box">
+        <div class="day-title">Day 7</div>
+        <div class="meal-details">
+          <p><strong>Breakfast:</strong> Choice of Fruit & Milk</p>
+          <p><strong>Lunch:</strong> Special Veg Thali</p>
+          <p><strong>Dinner:</strong> Light Khichdi & Curd</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="back-btn-container">
+      <a class="back-link" href="index.html" style="color: #ff4d4d; text-decoration: none; font-weight: bold;">⬅ Back to Home</a>
+    </div>
+  </div>
+
+  <script src="food.js"></script>
+</body>
+</html>

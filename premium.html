@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Plan - Jenito</title>
+  <link rel="stylesheet" href="food.css">
+  <style>
+    /* Grid layout for premium boxes */
+    .premium-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      padding: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* Premium Box Styling */
+    .premium-box {
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 77, 77, 0.3);
+      border-radius: 20px;
+      padding: 40px 25px;
+      text-align: center;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Hover Effect */
+    .premium-box:hover {
+      transform: translateY(-15px);
+      border-color: #ff4d4d;
+      background: rgba(255, 77, 77, 0.08);
+      box-shadow: 0 15px 45px rgba(255, 77, 77, 0.2);
+    }
+
+    /* Titles */
+    .premium-title {
+      color: #ff4d4d;
+      font-size: 1.6rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Features Text */
+    .premium-features {
+      margin-bottom: 25px;
+      min-height: 80px;
+    }
+
+    .premium-features p {
+      color: #ddd;
+      font-size: 1rem;
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+
+    /* Price Tag */
+    .price-tag {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 25px;
+    }
+
+    .price-tag span {
+      color: #ff4d4d;
+    }
+
+    /* Subscribe Button */
+    .sub-btn {
+      display: inline-block;
+      background: #ff4d4d;
+      color: white;
+      padding: 12px 35px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      border: 2px solid transparent;
+    }
+
+    .sub-btn:hover {
+      background: transparent;
+      border-color: #ff4d4d;
+      box-shadow: 0 0 15px #ff4d4d;
+    }
+
+    /* Badge for popular choice (Optional) */
+    .badge {
+      position: absolute;
+      top: 15px;
+      right: -30px;
+      background: #ff4d4d;
+      color: white;
+      padding: 5px 40px;
+      transform: rotate(45deg);
+      font-size: 0.7rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="stars-canvas"></div>
+  
+  <div class="food-container" style="padding-top: 50px;">
+    <h1 style="color: #ff4d4d; text-align: center; font-size: 2.5rem; margin-bottom: 10px;">👑 Premium Memberships</h1>
+    <p style="color: #888; text-align: center; margin-bottom: 50px;">Choose the plan that fits your lifestyle</p>
+
+    <div class="premium-grid">
+    
+
+      <div class="premium-box" style="border-width: 2px; border-color: #ff4d4d;">
+        <div class="badge">BEST VALUE</div>
+        <div class="premium-title">Go Premium</div>
+        <div class="premium-features">
+          <p>🍱 Order anytime without limits</p>
+          <p>⚡ Get your food delivered first, every time</p>
+        </div>
+        <div class="price-tag"><span>₹1999</span> / month</div>
+        <a href="order.html" class="sub-btn">Subscribe Now</a>
+      </div>
+
+      <div class="premium-box">
+        <div class="premium-title">Premium Membership</div>
+        <div class="premium-features">
+          <p>🔓 Unlimited access</p>
+          <p>🏎️ Fast-track delivery</p>
+        </div>
+        <div class="price-tag"><span>₹1999</span> / month</div>
+        <a href="order.html" class="sub-btn">Subscribe Now</a>
+      </div>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 50px; padding-bottom: 50px;">
+      <a class="back-link" href="index.html" style="color: #888; text-decoration: none;">⬅ Back to Home</a>
+    </div>
+  </div>
+
+  <script src="food.js"></script>
+</body>
+</html>
