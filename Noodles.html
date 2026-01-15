@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,16 +6,29 @@
   <title>Noodles Varieties - Jenito</title>
   <link rel="stylesheet" href="food.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Card ko clickable dikhane aur link style hatane ke liye */
+    .food-card {
+      cursor: pointer;
+    }
+    .food-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block; /* Isse pura card area clickable ho jayega */
+    }
+  </style>
 </head>
 <body>
+  <div id="stars-canvas"></div>
+
   <header>
     <img class="img" src="Logo.11.jpg" width="150" height="150" alt="Jenito Logo">
     <div class="Logo">JENITO</div>
     <nav>
       <ul>
-        <li><a href="food.html#popular">Popular Dishes</a></li>
-        <li><a href="food.html#plans">Meal Plans</a></li>
-        <li><a href="#">Order Now</a></li>
+        <li><a href="index.html#popular">Popular Dishes</a></li>
+        <li><a href="index.html#plans">Meal Plans</a></li>
+        <li><a href="order.html">Order Now</a></li>
         <li><a href="login.html">Login</a></li>
       </ul>
     </nav>
@@ -24,72 +37,90 @@
   <div class="food-container">
     <h1>🍜 Noodles Varieties</h1>
     <div class="food-grid">
+      
       <div class="food-card">
-        <img src="Hakka.jpg" alt="Hakka Noodles">
-        <div class="food-info">
-          <h3>Hakka Noodles</h3>
-          <p>₹150</p>
-        </div>
-      </div>
-
-      <div class="food-card">
-        <img src="Singapore.webp" alt="Singapore Noodles">
-        <div class="food-info">
-          <h3>Singapore Noodles</h3>
-          <p>₹180</p>
-        </div>
-      </div>
-
-       <div class="food-card">
-        <img src="Ramen.jpg" alt="Ramen Noodles">
-        <div class="food-info">
-          <h3>Ramen Noodles</h3>
-          <p>₹230</p>
-        </div>
+        <a href="order.html">
+          <img src="Hakka.jpg" alt="Hakka Noodles">
+          <div class="food-info">
+            <h3>Hakka Noodles</h3>
+            <p>₹150</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="pad thai.jpg" alt="Pad Thai">
-        <div class="food-info">
-          <h3>Pad Thai</h3>
-          <p>₹260</p>
-        </div>
+        <a href="order.html">
+          <img src="Singapore.webp" alt="Singapore Noodles">
+          <div class="food-info">
+            <h3>Singapore Noodles</h3>
+            <p>₹180</p>
+          </div>
+        </a>
       </div>
 
-       <div class="food-card">
-        <img src="Vegetable.jpg" alt="Vegetable Noodles">
-        <div class="food-info">
-          <h3>Vegetable Noodles</h3>
-          <p>₹170</p>
-        </div>
+      <div class="food-card">
+        <a href="order.html">
+          <img src="Ramen.jpg" alt="Ramen Noodles">
+          <div class="food-info">
+            <h3>Ramen Noodles</h3>
+            <p>₹230</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="food-card">
+        <a href="order.html">
+          <img src="pad thai.jpg" alt="Pad Thai">
+          <div class="food-info">
+            <h3>Pad Thai</h3>
+            <p>₹260</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="food-card">
+        <a href="order.html">
+          <img src="Vegetable.jpg" alt="Vegetable Noodles">
+          <div class="food-info">
+            <h3>Vegetable Noodles</h3>
+            <p>₹170</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="food-card">
+        <a href="order.html">
+          <img src="Schezwan.webp" alt="Schezwan Noodles">
+          <div class="food-info">
+            <h3>Schezwan Noodles</h3>
+            <p>₹200</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="food-card">
+        <a href="order.html">
+          <img src="Udon.jpg" alt="Udon Noodles">
+          <div class="food-info">
+            <h3>Udon Noodles</h3>
+            <p>₹250</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="food-card">
+        <a href="order.html">
+          <img src="Chicken.jpg" alt="Chicken Noodles">
+          <div class="food-info">
+            <h3>Chicken Noodles</h3>
+            <p>₹220</p>
+          </div>
+        </a>
+      </div>
+
     </div>
 
-    <div class="food-card">
-        <img src="Schezwan.webp" alt="Schezwan Noodles">
-        <div class="food-info">
-          <h3>Schezwan Noodles</h3>
-          <p>₹200</p>
-        </div>
-      </div>
-
-       <div class="food-card">
-        <img src="Udon.jpg" alt="Udon Noodles">
-        <div class="food-info">
-          <h3>Udon Noodles</h3>
-          <p>₹250</p>
-        </div>
-      </div>
-
-
-      <div class="food-card">
-        <img src="Chicken.jpg" alt="Chicken Noodles">
-        <div class="food-info">
-          <h3>Chicken Noodles</h3>
-          <p>₹220</p>
-        </div>
-      </div>
-
-    <a class="back-link" href="food.html">⬅ Back to Home</a>
+    <a class="back-link" href="index.html">⬅ Back to Home</a>
   </div>
 
   <script src="food.js"></script>
