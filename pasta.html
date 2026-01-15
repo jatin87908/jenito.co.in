@@ -6,6 +6,17 @@
   <title>Pasta Varieties - Jenito</title>
   <link rel="stylesheet" href="food.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Card ko clickable dikhane aur link style hatane ke liye */
+    .food-card {
+      cursor: pointer;
+    }
+    .food-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block; /* Isse pura card area clickable ho jayega */
+    }
+  </style>
 </head>
 <body>
   <div id="stars-canvas"></div>
@@ -15,9 +26,9 @@
     <div class="Logo">JENITO</div>
     <nav>
       <ul>
-        <li><a href="food.html#popular">Popular Dishes</a></li>
-        <li><a href="food.html#plans">Meal Plans</a></li>
-        <li><a href="#">Order Now</a></li>
+        <li><a href="index.html#popular">Popular Dishes</a></li>
+        <li><a href="index.html#plans">Meal Plans</a></li>
+        <li><a href="order.html">Order Now</a></li>
         <li><a href="login.html">Login</a></li>
       </ul>
     </nav>
@@ -26,103 +37,130 @@
   <div class="food-container">
     <h1>🍝 Pasta Varieties</h1>
     <div class="food-grid">
+      
       <div class="food-card">
-        <img src="classic.jpg" alt="Classic Pasta">
-        <div class="food-info">
-          <h3>Classic Pasta</h3>
-          <p>₹180</p>
-        </div>
+        <a href="order.html">
+          <img src="classic.jpg" alt="Classic Pasta">
+          <div class="food-info">
+            <h3>Classic Pasta</h3>
+            <p>₹180</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="White.jpg" alt="White Sauce Pasta">
-        <div class="food-info">
-          <h3>White Sauce Pasta</h3>
-          <p>₹220</p>
-        </div>
+        <a href="order.html">
+          <img src="White.jpg" alt="White Sauce Pasta">
+          <div class="food-info">
+            <h3>White Sauce Pasta</h3>
+            <p>₹220</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="Red Sauce.webp" alt="Red Sauce Pasta">
-        <div class="food-info">
-          <h3>Red Sauce Pasta</h3>
-          <p>₹200</p>
-        </div>
+        <a href="order.html">
+          <img src="Red Sauce.webp" alt="Red Sauce Pasta">
+          <div class="food-info">
+            <h3>Red Sauce Pasta</h3>
+            <p>₹200</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="penne.jpg" alt="Penne Arrabbiata">
-        <div class="food-info">
-          <h3>Penne Arrabbiata</h3>
-          <p>₹190</p>
-        </div>
+        <a href="order.html">
+          <img src="penne.jpg" alt="Penne Arrabbiata">
+          <div class="food-info">
+            <h3>Penne Arrabbiata</h3>
+            <p>₹190</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="Carbonara.jpg" alt="Pasta Carbonara">
-        <div class="food-info">
-          <h3>Pasta Carbonara</h3>
-          <p>₹250</p>
-        </div>
+        <a href="order.html">
+          <img src="Carbonara.jpg" alt="Pasta Carbonara">
+          <div class="food-info">
+            <h3>Pasta Carbonara</h3>
+            <p>₹250</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="Alfredo.jpg" alt="Pasta Alfredo">
-        <div class="food-info">
-          <h3>Pasta Alfredo</h3>
-          <p>₹240</p>
-        </div>
+        <a href="order.html">
+          <img src="Alfredo.jpg" alt="Pasta Alfredo">
+          <div class="food-info">
+            <h3>Pasta Alfredo</h3>
+            <p>₹240</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="Pesto.jpg" alt="Pasta Pesto">
-        <div class="food-info">
-          <h3>Pasta Pesto</h3>
-          <p>₹230</p>
-        </div>
+        <a href="order.html">
+          <img src="Pesto.jpg" alt="Pasta Pesto">
+          <div class="food-info">
+            <h3>Pasta Pesto</h3>
+            <p>₹230</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="Primavera.jpg" alt="Pasta Primavera">
-        <div class="food-info">
-          <h3>Pasta Primavera</h3>
-          <p>₹210</p>
-        </div>
+        <a href="order.html">
+          <img src="Primavera.jpg" alt="Pasta Primavera">
+          <div class="food-info">
+            <h3>Pasta Primavera</h3>
+            <p>₹210</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="bolognese.jpg" alt="Pasta Bolognese">
-        <div class="food-info">
-          <h3>Pasta Bolognese</h3>
-          <p>₹260</p>
-        </div>
+        <a href="order.html">
+          <img src="bolognese.jpg" alt="Pasta Bolognese">
+          <div class="food-info">
+            <h3>Pasta Bolognese</h3>
+            <p>₹260</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="Marinara.jpg" alt="Pasta Marinara">
-        <div class="food-info">
-          <h3>Pasta Marinara</h3>
-          <p>₹200</p>
-        </div>
+        <a href="order.html">
+          <img src="Marinara.jpg" alt="Pasta Marinara">
+          <div class="food-info">
+            <h3>Pasta Marinara</h3>
+            <p>₹200</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="aglio.jpg" alt="Pasta Aglio Olio">
-        <div class="food-info">
-          <h3>Pasta Aglio Olio</h3>
-          <p>₹190</p>
-        </div>
+        <a href="order.html">
+          <img src="aglio.jpg" alt="Pasta Aglio Olio">
+          <div class="food-info">
+            <h3>Pasta Aglio Olio</h3>
+            <p>₹190</p>
+          </div>
+        </a>
       </div>
 
       <div class="food-card">
-        <img src="Vodka.jpg" alt="Pasta Vodka">
-        <div class="food-info">
-          <h3>Pasta Vodka</h3>
-          <p>₹270</p>
-        </div>
+        <a href="order.html">
+          <img src="Vodka.jpg" alt="Pasta Vodka">
+          <div class="food-info">
+            <h3>Pasta Vodka</h3>
+            <p>₹270</p>
+          </div>
+        </a>
       </div>
 
-       <a class="back-link" href="food.html">⬅ Back to Home</a>
+    </div>
+
+    <a class="back-link" href="index.html">⬅ Back to Home</a>
   </div>
 
   <script src="food.js"></script>
